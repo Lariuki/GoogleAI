@@ -11,7 +11,7 @@ PROJECT_ID = os.getenv("insira_project_id")
 client = storage.Client()
 
 # Defina o nome do bucket onde os arquivos estão armazenados
-bucket_name = 'insira_bucket_name
+bucket_name = 'insira_bucket_name'
 
 # Listar todos os arquivos no bucket
 bucket = client.get_bucket(bucket_name)
