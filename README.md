@@ -1,6 +1,5 @@
 ## Objetivo
-A intenção desses códigos é para executar testes utilizando como modelo ChatVertexAI e o GenerativeModel. 
-A diferença entre esses dois modelos é que o ChatVertexAI é para conversas e GenerativeModel é para criação de conteúdo.
+Os códigos têm como finalidade executar testes utilizando dois modelos: ChatVertexAI e GenerativeModel. A principal diferença entre esses modelos é que o ChatVertexAI é projetado para interações conversacionais, enquanto o GenerativeModel é voltado para a geração de conteúdo criativo.
 
 ## ChatVertexAI 
 # Versão 1: ChatVertexAI Simples 
