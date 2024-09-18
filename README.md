@@ -1,18 +1,18 @@
 ## Objetivo
 Os códigos têm como finalidade executar testes utilizando dois modelos: ChatVertexAI e GenerativeModel. A principal diferença entre esses modelos é que o ChatVertexAI é projetado para interações conversacionais, enquanto o GenerativeModel é voltado para a geração de conteúdo criativo.
 
-## ChatVertexAI 
-# Versão 1: ChatVertexAI Simples 
+# ChatVertexAI 
+# Versão 1: ChatVertexAI Simples #
 Este código utiliza o modelo Gemini 1.5 Pro da Vertex AI para processar uma pergunta fornecida pelo usuário e um documento em formato de URL (como um arquivo PDF). O código cria uma mensagem contendo tanto uma pergunta de texto quanto uma URL de um arquivo armazenado no Google Cloud Storage e, em seguida, invoca o modelo para gerar uma resposta.
 
-HumanMessage: Usado para combinar a pergunta e a URL do arquivo.
-ChatVertexAI: Invoca o modelo gemini-1.5-pro-001 para gerar uma resposta baseada nas informações fornecidas.
-Passos:
+- HumanMessage: Usado para combinar a pergunta e a URL do arquivo.
+- ChatVertexAI: Invoca o modelo gemini-1.5-pro-001 para gerar uma resposta baseada nas informações fornecidas.
 
+Passos:
 Prepara uma mensagem com texto e uma URL de PDF.
 Chama o modelo para responder com base nas entradas fornecidas.
 
-# Versão 2: Integração com Google Cloud Storage 
+# Versão 2: Integração com Google Cloud Storage #
 Nesta versão, o código lista todos os arquivos PDF de um bucket do Google Cloud Storage, cria mensagens com as URLs desses arquivos, e em seguida, envia uma pergunta ao modelo Gemini 1.5 Pro junto com essas URLs.
 
 - Google Cloud Storage: Utilizado para listar os arquivos PDF no bucket.
@@ -23,7 +23,7 @@ Lista os arquivos PDF de um bucket no Google Cloud.
 Combina as URLs dos arquivos com uma pergunta do usuário.
 Chama o modelo para fornecer uma resposta.
 
-# Versão 3: Adição de Prompt Personalizado
+# Versão 3: Adição de Prompt Personalizado #
 Esta versão é semelhante à anterior, mas permite a adição de um prompt personalizado que será incluído junto com as URLs dos arquivos PDF e a pergunta do usuário. Isso fornece mais controle sobre o contexto fornecido ao modelo antes de gerar uma resposta.
 
 - Prompt Customizado: Adicionado antes de exibir os documentos e a pergunta do usuário.
@@ -34,8 +34,8 @@ Lista os arquivos PDF de um bucket.
 Insere um prompt customizado e a pergunta do usuário.
 Envia tudo para o modelo Gemini 1.5 Pro para gerar uma resposta.
 
-# GenerativeModel
-# Versão 1: Utilização do Modelo Generativo Gemini com um PDF
+# GenerativeModel 
+# Versão 1: Utilização do Modelo Generativo Gemini com um PDF #
 Este código utiliza o modelo generativo Gemini 1.5 Flash da Vertex AI para processar e analisar um arquivo PDF. A funcionalidade principal é fornecer um prompt ao modelo e permitir que ele gere uma resposta com base nas informações fornecidas.
 
 Vertex AI: Inicializa o projeto e carrega o modelo Gemini 1.5 Flash.
@@ -47,7 +47,7 @@ O projeto Vertex AI é inicializado.
 Um arquivo PDF é carregado a partir de uma URL de armazenamento.
 O modelo gera uma resposta com base no prompt e no PDF.
 
-# Versão 2: Integração com Google Cloud Storage e Extração de Conteúdo de PDFs
+# Versão 2: Integração com Google Cloud Storage e Extração de Conteúdo de PDFs #
 Nesta versão, o código foi expandido para listar e baixar vários arquivos PDF armazenados no Google Cloud Storage. O conteúdo dos arquivos PDF é extraído e usado para fornecer contexto ao modelo Gemini 1.5 Flash junto com a pergunta do usuário.
 
 - Google Cloud Storage: O código lista e faz o download dos PDFs armazenados em um bucket, extraindo o conteúdo de cada PDF.
